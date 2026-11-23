@@ -22,6 +22,7 @@ menus:
       intro:
         slot: 4
         material: NETHER_STAR
+        oraxen: menu_intro        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&#2F8CFF&lᴀꜱᴛʀᴀxʙᴏx'
         lore:
@@ -35,6 +36,7 @@ menus:
       start:
         slot: 19
         material: WRITABLE_BOOK
+        oraxen: menu_start        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&a&lʜướɴɢ ᴅẫɴ ᴛâɴ ᴛʜủ'
         lore:
         - '&7Mới vào server? Bắt đầu từ đây.'
@@ -48,6 +50,7 @@ menus:
       guides:
         slot: 20
         material: KNOWLEDGE_BOOK
+        oraxen: menu_guide        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&b&lʜướɴɢ ᴅẫɴ ʜệ ᴛʜốɴɢ'
         lore:
         - '&7Nguyên tố, nhiệm vụ, danh hiệu, team...'
@@ -58,6 +61,7 @@ menus:
       commands:
         slot: 21
         material: COMMAND_BLOCK
+        oraxen: menu_commands        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&d&lᴅᴀɴʜ ꜱáᴄʜ ʟệɴʜ'
         lore:
         - '&7Các lệnh người chơi hay dùng.'
@@ -68,6 +72,7 @@ menus:
       rank:
         slot: 23
         material: DIAMOND
+        oraxen: menu_rank        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&b&lʀᴀɴᴋ & ǫᴜʏềɴ ʟợɪ'
         lore:
@@ -80,6 +85,7 @@ menus:
       kit:
         slot: 24
         material: CHEST
+        oraxen: menu_kit        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&6&lᴋɪᴛ'
         lore:
         - '&7Xem danh sách kit (PlayerKits2).'
@@ -91,6 +97,7 @@ menus:
       rules:
         slot: 25
         material: OAK_SIGN
+        oraxen: menu_rules        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c&lɴộɪ ǫᴜʏ'
         lore:
         - '&7Vui lòng đọc trước khi chơi.'
@@ -101,6 +108,7 @@ menus:
       quest:
         slot: 38
         material: CLOCK
+        oraxen: menu_quest        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e&lɴʜɪệᴍ ᴠụ'
         lore:
         - '&7Nhiệm vụ ngày / tuần / PvP.'
@@ -112,6 +120,7 @@ menus:
       title:
         slot: 39
         material: NAME_TAG
+        oraxen: menu_title        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&6&lᴅᴀɴʜ ʜɪệᴜ'
         lore:
         - '&7Đeo danh hiệu để nhận buff.'
@@ -123,6 +132,7 @@ menus:
       nguyento:
         slot: 41
         material: AMETHYST_SHARD
+        oraxen: menu_nt        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&d&lɴɢᴜʏêɴ ᴛố ʙᴀʏ'
         lore:
         - '&7Trang bị nguyên tố bay quanh người.'
@@ -134,6 +144,7 @@ menus:
       team:
         slot: 42
         material: WHITE_BANNER
+        oraxen: menu_team        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&a&lᴛᴇᴀᴍ'
         lore:
         - '&7Lập team, chiếm khu vực, team war.'
@@ -145,6 +156,7 @@ menus:
       discord:
         slot: 47
         material: PAPER
+        oraxen: menu_discord        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&9&lᴅɪꜱᴄᴏʀᴅ'
         lore:
         - '&7Tham gia cộng đồng, nhận hỗ trợ.'
@@ -156,12 +168,14 @@ menus:
       close:
         slot: 49
         material: BARRIER
+        oraxen: menu_close        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&cĐóɴɢ'
         actions:
         - '[close]'
       website:
         slot: 51
         material: COMPASS
+        oraxen: menu_website        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&b&lᴡᴇʙꜱɪᴛᴇ'
         lore:
         - '&7Tin tức, cửa hàng, bảng xếp hạng.'
@@ -173,6 +187,7 @@ menus:
       shop:
         slot: 40
         material: TRIPWIRE_HOOK
+        oraxen: menu_shop        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&#2F8CFF&lꜱʜᴏᴘ ᴋᴇʏ'
         lore:
@@ -189,6 +204,7 @@ menus:
       g_start:
         slot: 20
         material: WRITABLE_BOOK
+        oraxen: menu_start        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&a&lᴛâɴ ᴛʜủ'
         lore:
         - '&7Các bước đầu tiên.'
@@ -199,6 +215,7 @@ menus:
       g_nguyento:
         slot: 21
         material: AMETHYST_SHARD
+        oraxen: menu_nt        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&d&lɴɢᴜʏêɴ ᴛố ʙᴀʏ'
         lore:
         - '&7/nt - nguyên tố bay quanh người.'
@@ -209,6 +226,7 @@ menus:
       g_quest:
         slot: 22
         material: CLOCK
+        oraxen: menu_quest        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e&lɴʜɪệᴍ ᴠụ'
         lore:
         - '&7/quest - ngày, tuần, PvP.'
@@ -219,6 +237,7 @@ menus:
       g_titles:
         slot: 23
         material: NAME_TAG
+        oraxen: menu_title        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&6&lᴅᴀɴʜ ʜɪệᴜ'
         lore:
         - '&7/title - buff và nội tại.'
@@ -229,6 +248,7 @@ menus:
       g_team:
         slot: 24
         material: WHITE_BANNER
+        oraxen: menu_team        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&a&lᴛᴇᴀᴍ'
         lore:
         - '&7/team - đồng đội, khu vực, war.'
@@ -239,12 +259,14 @@ menus:
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] main'
       close:
         slot: 31
         material: BARRIER
+        oraxen: menu_close        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&cĐóɴɢ'
         actions:
         - '[close]'
@@ -255,6 +277,7 @@ menus:
       step1:
         slot: 10
         material: CHEST
+        oraxen: menu_kit        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e1. ɴʜậɴ đồ'
         lore:
         - '&7Gõ &f/kit &7để xem và nhận kit.'
@@ -262,6 +285,7 @@ menus:
       step2:
         slot: 11
         material: AMETHYST_SHARD
+        oraxen: menu_nt        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e2. ᴛʀᴀɴɢ ʙị ɴɢᴜʏêɴ ᴛố'
         lore:
         - '&7Gõ &f/nt &7rồi chọn nguyên tố bay'
@@ -269,6 +293,7 @@ menus:
       step3:
         slot: 12
         material: CLOCK
+        oraxen: menu_quest        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e3. ʟàᴍ ɴʜɪệᴍ ᴠụ'
         lore:
         - '&7Gõ &f/quest &7: nhiệm vụ ngày/tuần.'
@@ -276,6 +301,7 @@ menus:
       step4:
         slot: 13
         material: NAME_TAG
+        oraxen: menu_title        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e4. Đᴇᴏ ᴅᴀɴʜ ʜɪệᴜ'
         lore:
         - '&7Gõ &f/title &7: mở khóa bằng nhiệm vụ,'
@@ -283,6 +309,7 @@ menus:
       step5:
         slot: 14
         material: WHITE_BANNER
+        oraxen: menu_team        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e5. ʟậᴘ ᴛᴇᴀᴍ'
         lore:
         - '&7Gõ &f/team create <tên>'
@@ -290,24 +317,28 @@ menus:
       step6:
         slot: 15
         material: DIAMOND
+        oraxen: menu_rank        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e6. xᴇᴍ ʀᴀɴᴋ'
         lore:
         - '&7Gõ &f/rank &7để biết quyền lợi từng rank.'
       step7:
         slot: 16
         material: OAK_SIGN
+        oraxen: menu_rules        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&e7. Đọᴄ ɴộɪ ǫᴜʏ'
         lore:
         - '&7Mở menu chính → Nội quy.'
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] guide'
       book:
         slot: 31
         material: WRITABLE_BOOK
+        oraxen: menu_start        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&a&lĐọᴄ ꜱáᴄʜ ʜướɴɢ ᴅẫɴ'
         lore:
@@ -359,12 +390,14 @@ menus:
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] guide'
       book:
         slot: 31
         material: WRITABLE_BOOK
+        oraxen: menu_start        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&a&lĐọᴄ ꜱáᴄʜ ʜướɴɢ ᴅẫɴ'
         lore:
@@ -425,12 +458,14 @@ menus:
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] guide'
       book:
         slot: 31
         material: WRITABLE_BOOK
+        oraxen: menu_start        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&a&lĐọᴄ ꜱáᴄʜ ʜướɴɢ ᴅẫɴ'
         lore:
@@ -491,12 +526,14 @@ menus:
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] guide'
       book:
         slot: 31
         material: WRITABLE_BOOK
+        oraxen: menu_start        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&a&lĐọᴄ ꜱáᴄʜ ʜướɴɢ ᴅẫɴ'
         lore:
@@ -566,12 +603,14 @@ menus:
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] guide'
       book:
         slot: 31
         material: WRITABLE_BOOK
+        oraxen: menu_start        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         glow: true
         name: '&a&lĐọᴄ ꜱáᴄʜ ʜướɴɢ ᴅẫɴ'
         lore:
@@ -598,6 +637,7 @@ menus:
       c10:
         slot: 11
         material: CHEST
+        oraxen: menu_kit        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&6ᴋɪᴛ & ʀᴀɴᴋ'
         lore:
         - '&f/kit &7- xem/nhận kit'
@@ -606,6 +646,7 @@ menus:
       c12:
         slot: 12
         material: AMETHYST_SHARD
+        oraxen: menu_nt        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&dɴɢᴜʏêɴ ᴛố ʙᴀʏ'
         lore:
         - '&f/nt &7- menu trang bị'
@@ -613,6 +654,7 @@ menus:
       c13:
         slot: 13
         material: CLOCK
+        oraxen: menu_quest        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&eɴʜɪệᴍ ᴠụ'
         lore:
         - '&f/quest &7(&f/nv&7) - menu'
@@ -620,6 +662,7 @@ menus:
       c14:
         slot: 14
         material: NAME_TAG
+        oraxen: menu_title        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&6ᴅᴀɴʜ ʜɪệᴜ'
         lore:
         - '&f/title &7- menu'
@@ -627,6 +670,7 @@ menus:
       c15:
         slot: 15
         material: WHITE_BANNER
+        oraxen: menu_team        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&aᴛᴇᴀᴍ'
         lore:
         - '&f/team &7(&f/t&7) - menu'
@@ -636,12 +680,14 @@ menus:
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] main'
       close:
         slot: 31
         material: BARRIER
+        oraxen: menu_close        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&cĐóɴɢ'
         actions:
         - '[close]'
@@ -688,12 +734,14 @@ menus:
       back:
         slot: 27
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&c« ǫᴜᴀʏ ʟạɪ'
         actions:
         - '[open] main'
       close:
         slot: 31
         material: BARRIER
+        oraxen: menu_close        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: '&cĐóɴɢ'
         actions:
         - '[close]'
@@ -752,10 +800,12 @@ menus:
       back:
         slot: 36
         material: ARROW
+        oraxen: menu_back        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: "&c« ǫᴜᴀʏ ʟạɪ"
         actions: ["[open] main"]
       close:
         slot: 40
         material: BARRIER
+        oraxen: menu_close        # texture Oraxen (không có Oraxen thì dùng material ở trên)
         name: "&cĐóng"
         actions: ["[close]"]
