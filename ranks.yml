@@ -1,0 +1,133 @@
+# ======================================================================
+#  /rank - xem quyền lợi các rank. Sửa xong gõ /astraxmenu reload.
+#
+#  Plugin tự ĐỌC kit của PlayerKits2 (plugins/PlayerKits2/kits/<kit>.yml) để
+#  hiện đúng vật phẩm trong từng kit (chỉ đọc, không sửa).
+#  Thứ tự rank bên dưới là THẤP -> CAO (Pro ... Apex).
+#  >>> Rank Pro lấy từ kit thật của bạn. Các rank còn lại là MẪU: sửa giá, quyền lợi, tên kit. <<<
+#
+#  Mỗi rank:
+#    label        tên thường (dùng trong tin nhắn)
+#    name         tên hiển thị trong GUI. {g:pro} = glyph tag Pro (xem config.yml > glyphs)
+#    model        item_model hiển thị (mặc định oraxen:rank_<id>, emblem động trong Oraxen/items/rank_models.yml)
+#    icon         vật phẩm dự phòng nếu model không có
+#    kit          tên kit trong /kit ("" = rank không có kit)
+#    permission   quyền coi là "đang có rank" (mặc định group.<id> của LuckPerms)
+# ======================================================================
+settings:
+  title: "&8✦ &6&lRANK &8✦ &7Quyền lợi"
+  detail-title: "&8Rank: {rank}"
+  rows: 4
+  slots: [10, 11, 12, 14, 15, 16]
+  detail-slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25]
+  default-rank-name: "&7Thành viên"
+  back-menu: main
+  kit-command: "kit {kit}"
+  require-owned-to-claim: true
+  show-kit-contents: true
+  claim-material: EMERALD
+  kits-folder: "PlayerKits2/kits"   # tính từ thư mục plugins/
+
+texts:
+  status-current: "&6★ Rank hiện tại của bạn"
+  status-owned: "&a✔ Bạn đã sở hữu rank này"
+  status-locked: "&c✖ Bạn chưa sở hữu rank này"
+  perks-title: "&6Quyền lợi:"
+  kit-line: "&eKit: &f/kit {kit}"
+  kit-cooldown: "&7Hồi kit: &f{cooldown}"
+  kit-once: "Chỉ dùng 1 lần"
+  kit-nocd: "Không hồi"
+  price-line: "&7Giá rank: &f{price}"
+  hint-left: "&eChuột trái: &7xem vật phẩm trong kit"
+  hint-right: "&eChuột phải: &7nhận kit &f/kit {kit}"
+  header-name: "&e{player}"
+  header-current: "&7Rank của bạn: {rank}"
+  header-hint-1: "&eChuột trái &7vào rank: xem vật phẩm trong kit"
+  header-hint-2: "&eChuột phải &7vào rank: nhận kit"
+  back: "&c« Quay lại menu"
+  close: "&cĐóng"
+  back-list: "&c« Danh sách rank"
+  claim-name: "&a&lNhận kit /kit {kit}"
+  claim-lore: "&7Bấm để chạy lệnh nhận kit."
+  more-items: "&7...và &f{n} &7vật phẩm khác"
+  no-kit: "&7Rank này không có kit."
+  preview-off: "&7Xem trước kit đang tắt."
+  kit-unreadable: "&7Không đọc được kit &f{kit}&7 từ PlayerKits2."
+  empty-title: "&cKhông có nội dung để xem trước"
+
+ranks:
+  pro:
+    label: "Pro"
+    name: "&f{g:pro}"
+    model: "oraxen:rank_pro"
+    icon: GOLD_INGOT
+    kit: pro
+    permission: group.pro
+    price: "Bank 20k VNĐ | Card 40k"
+    description: ["&7Rank khởi đầu của hệ thống."]
+    perks:
+      - "&f• &8[&a/kit&8] &7Nhận quà trong kit rank (&a3 &7ngày &a1 &7lần)"
+      - "&f• &8[&a/autopickup&8] &7Tự động thu nhặt"
+      - "&f• &8[&a/pv&8] &7Tăng kho chứa đồ từ &a1 &7thành &a2"
+      - "&f• &8[&aMine&8] &7Khu đào khoáng sản riêng"
+      - "&f• &8[&aRole&8] &7Role độc quyền trong Discord"
+  platinum:
+    label: "Platinum"
+    name: "&f{g:platinum}"
+    model: "oraxen:rank_platinum"
+    icon: DIAMOND
+    kit: platinum
+    permission: group.platinum
+    price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
+    description: ["&7Gồm quyền lợi của Pro và nhiều hơn nữa."]  # MẪU
+    perks:
+      - "&7▪ Nhận kit &e/kit platinum"
+      - "&7▪ (thêm quyền lợi của Platinum tại đây)"
+  ruby:
+    label: "Ruby"
+    name: "&f{g:ruby}"
+    model: "oraxen:rank_ruby"
+    icon: EMERALD
+    kit: ruby
+    permission: group.ruby
+    price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
+    description: ["&7Gồm quyền lợi của Platinum và nhiều hơn nữa."]  # MẪU
+    perks:
+      - "&7▪ Nhận kit &e/kit ruby"
+      - "&7▪ (thêm quyền lợi của Ruby tại đây)"
+  trial:
+    label: "Trial"
+    name: "&f{g:trial}"
+    model: "oraxen:rank_trial"
+    icon: BLAZE_POWDER
+    kit: trial
+    permission: group.trial
+    price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
+    description: ["&7Gồm quyền lợi của Ruby và nhiều hơn nữa."]  # MẪU
+    perks:
+      - "&7▪ Nhận kit &e/kit trial"
+      - "&7▪ (thêm quyền lợi của Trial tại đây)"
+  tejo:
+    label: "Tejo"
+    name: "&f{g:tejo}"
+    model: "oraxen:rank_tejo"
+    icon: SUNFLOWER
+    kit: tejo
+    permission: group.tejo
+    price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
+    description: ["&7Gồm quyền lợi của Trial và nhiều hơn nữa."]  # MẪU
+    perks:
+      - "&7▪ Nhận kit &e/kit tejo"
+      - "&7▪ (thêm quyền lợi của Tejo tại đây)"
+  apex:
+    label: "Apex"
+    name: "&f{g:apex}"
+    model: "oraxen:rank_apex"
+    icon: NETHER_STAR
+    kit: apex
+    permission: group.apex
+    price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
+    description: ["&7Gồm quyền lợi của Tejo và nhiều hơn nữa."]  # MẪU
+    perks:
+      - "&7▪ Nhận kit &e/kit apex"
+      - "&7▪ (thêm quyền lợi của Apex tại đây)"

@@ -1,0 +1,39 @@
+# ===== AstraxMenu 2.0 - cấu hình chính =====
+# Sửa xong gõ /astraxmenu reload (không cần restart).
+# Menu: menus.yml | Rank: ranks.yml | Sách: guides.yml | Tin nhắn: messages.yml
+
+main-menu: main            # menu mở bằng /menu (không có tham số)
+
+gui:
+  click-cooldown-ms: 250
+  click-sound: "ui.button.click"   # "none" để tắt
+  filler-material: BLACK_STAINED_GLASS_PANE
+  filler-model: ""         # vd oraxen:menu_filler nếu bạn có model ô trống riêng
+  filler-name: " "
+
+# Ký tự glyph của resource pack (Oraxen). Dùng trong chữ bằng {g:tên}.
+# Đây là khung đầu của animation tag_<rank> (U+F400, F408, F410...). Phải viết trong dấu nháy KÉP.
+glyphs:
+  pro: "\uF400"
+  platinum: "\uF408"
+  ruby: "\uF410"
+  trial: "\uF418"
+  tejo: "\uF420"
+  apex: "\uF428"
+
+join:
+  hint:
+    enabled: true
+    message: "&7Gõ &e/menu &7để xem hướng dẫn, &e/rank &7để xem quyền lợi rank."
+  first-join-menu:
+    enabled: true
+    menu: main
+  item:
+    enabled: false
+    slot: 8
+    material: NETHER_STAR
+    # model: oraxen:menu_star
+    name: "&6&lMenu Server &7(Chuột phải)"
+    lore:
+      - "&7Bấm chuột phải để mở menu."
+    menu: main
