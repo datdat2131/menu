@@ -43,6 +43,9 @@ public final class Actions {
                 case "close" -> p.closeInventory();
                 case "message" -> p.sendMessage(Text.raw(arg));
                 case "sound" -> Items.sound(p, arg);
+                case "cost-points" -> {
+                    if (!costPoints(pl, p, arg)) return; // không đủ poin: dừng, không chạy các dòng sau
+                }
                 case "link" -> {
                     String[] parts = arg.split("\\|", 2);
                     String url = parts[0].trim();
@@ -52,6 +55,31 @@ public final class Actions {
                 default -> pl.getLogger().warning("Hành động không hiểu: " + raw);
             }
         }
+    }
+
+    /** Trừ poin của người chơi. Trả về false (và báo lỗi) nếu không trừ được. */
+    private static boolean costPoints(AstraxMenuPlugin pl, Player p, String arg) {
+        int need;
+        try {
+            need = Integer.parseInt(arg.trim());
+        } catch (NumberFormatException e) {
+            pl.getLogger().warning("[cost-points] giá không phải số: " + arg);
+            return false;
+        }
+        if (!PointsHook.available()) {
+            pl.messages().send(p, "shop-no-points");
+            return false;
+        }
+        int have = PointsHook.look(p.getUniqueId());
+        if (have < need) {
+            pl.messages().send(p, "shop-not-enough", "need", String.valueOf(need), "have", String.valueOf(Math.max(0, have)));
+            return false;
+        }
+        if (!PointsHook.take(p.getUniqueId(), need)) {
+            pl.messages().send(p, "shop-not-enough", "need", String.valueOf(need), "have", String.valueOf(have));
+            return false;
+        }
+        return true;
     }
 
     private static String stripSlash(String s) {

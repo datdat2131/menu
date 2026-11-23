@@ -1,4 +1,4 @@
-# AstraxMenu 2.0 (có model)
+# AstraxMenu 2.0 (AstraxBox)
 
 Plugin menu GUI cho Paper 1.21.4: menu hướng dẫn, sách, xem quyền lợi rank và kit.
 Bản 2.0 viết lại toàn bộ, thêm **model** cho vật phẩm trong menu và dùng 6 rank mới
@@ -40,3 +40,13 @@ Kit đọc từ `plugins/PlayerKits2/kits/<kit>.yml` (chỉ đọc). Bấm chu�
 
 ## Hành động trong menu
 `[player] lệnh`, `[console] lệnh`, `[open] menu`, `[rank] [id]`, `[book] id`, `[close]`, `[message] chữ`, `[sound] key`, `[link] url | chữ`
+
+## Shop key (mua bằng poin)
+Menu `shop_key` (nút ở menu chính). Cần plugin **PlayerPoints**. Mỗi key là 1 nút trong `menus.yml`:
+`[cost-points] giá` trừ poin (không đủ thì dừng), sau đó `[console]` phát key. Lệnh mặc định:
+`crate key give {player} sea_key 1` (ExcellentCrates). Nếu lệnh phát key khác, sửa trong `menus.yml` và test 1 lần mua.
+Biến `{points}` hiện số poin của người chơi.
+
+## Rank
+Icon rank dùng vật phẩm thường (quặng vàng, quặng kim cương, khối vàng/kim cương), đổi ở `icon:` trong `ranks.yml`.
+Muốn dùng model riêng thì thêm `model: oraxen:xxx` cho rank đó.

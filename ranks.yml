@@ -9,13 +9,13 @@
 #  Mỗi rank:
 #    label        tên thường (dùng trong tin nhắn)
 #    name         tên hiển thị trong GUI. {g:pro} = glyph tag Pro (xem config.yml > glyphs)
-#    model        item_model hiển thị (mặc định oraxen:rank_<id>, emblem động trong Oraxen/items/rank_models.yml)
-#    icon         vật phẩm dự phòng nếu model không có
+#    model        (tùy chọn) item_model riêng, vd oraxen:xxx. Bỏ trống = dùng icon bên dưới
+#    icon         vật phẩm làm biểu tượng (quặng / vàng / kim cương...)
 #    kit          tên kit trong /kit ("" = rank không có kit)
 #    permission   quyền coi là "đang có rank" (mặc định group.<id> của LuckPerms)
 # ======================================================================
 settings:
-  title: "&8✦ &6&lRANK &8✦ &7Quyền lợi"
+  title: "&8✦ &6&lʀᴀɴᴋ &8✦ &7ǫᴜʏềɴ ʟợɪ"
   detail-title: "&8Rank: {rank}"
   rows: 4
   slots: [10, 11, 12, 14, 15, 16]
@@ -59,8 +59,7 @@ ranks:
   pro:
     label: "Pro"
     name: "&f{g:pro}"
-    model: "oraxen:rank_pro"
-    icon: GOLD_INGOT
+    icon: GOLD_ORE
     kit: pro
     permission: group.pro
     price: "Bank 20k VNĐ | Card 40k"
@@ -74,8 +73,7 @@ ranks:
   platinum:
     label: "Platinum"
     name: "&f{g:platinum}"
-    model: "oraxen:rank_platinum"
-    icon: DIAMOND
+    icon: DIAMOND_ORE
     kit: platinum
     permission: group.platinum
     price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
@@ -86,8 +84,7 @@ ranks:
   ruby:
     label: "Ruby"
     name: "&f{g:ruby}"
-    model: "oraxen:rank_ruby"
-    icon: EMERALD
+    icon: DEEPSLATE_DIAMOND_ORE
     kit: ruby
     permission: group.ruby
     price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
@@ -98,8 +95,7 @@ ranks:
   trial:
     label: "Trial"
     name: "&f{g:trial}"
-    model: "oraxen:rank_trial"
-    icon: BLAZE_POWDER
+    icon: RAW_GOLD_BLOCK
     kit: trial
     permission: group.trial
     price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
@@ -110,8 +106,7 @@ ranks:
   tejo:
     label: "Tejo"
     name: "&f{g:tejo}"
-    model: "oraxen:rank_tejo"
-    icon: SUNFLOWER
+    icon: GOLD_BLOCK
     kit: tejo
     permission: group.tejo
     price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại
@@ -122,8 +117,7 @@ ranks:
   apex:
     label: "Apex"
     name: "&f{g:apex}"
-    model: "oraxen:rank_apex"
-    icon: NETHER_STAR
+    icon: DIAMOND_BLOCK
     kit: apex
     permission: group.apex
     price: "Liên hệ Admin / nạp thẻ"  # MẪU - sửa lại

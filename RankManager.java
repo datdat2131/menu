@@ -45,7 +45,7 @@ public final class RankManager {
                     s.getString("name", "&f" + id),
                     s.getString("icon", "PAPER"),
                     s.getString("oraxen", ""),
-                    s.getString("model", "oraxen:rank_" + lid),
+                    s.getString("model", ""),
                     s.getString("kit", ""),
                     s.getString("permission", "group." + lid),
                     s.getString("price", ""),

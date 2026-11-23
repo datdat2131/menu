@@ -3,7 +3,7 @@ version: ${project.version}
 main: vn.astrax.menu.AstraxMenuPlugin
 api-version: '1.21'
 author: Astrax
-description: Menu GUI co model (Oraxen item model), xem rank va kit cho BoxMine RPG.
+description: Menu GUI co model (Oraxen item model), xem rank va kit cho AstraxBox.
 softdepend: [PlaceholderAPI, Oraxen, LuckPerms, PlayerKits2]
 commands:
   menu:

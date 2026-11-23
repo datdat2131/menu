@@ -7,7 +7,7 @@ public final class Placeholders {
     private Placeholders() {}
 
     /**
-     * Biến: {player} {online} {max} {rank} {rank_id} {rank_label} {rank_model}
+     * Biến: {player} {online} {max} {rank} {rank_id} {rank_label} {rank_model} {points}
      * và PlaceholderAPI (%...%) nếu có cài.
      */
     public static String apply(AstraxMenuPlugin pl, Player p, String s) {
@@ -17,6 +17,10 @@ public final class Placeholders {
         if (p == null) return s;
         RankManager rm = pl.ranks();
         RankManager.Rank r = rm.highest(p);
+        if (s.contains("{points}")) {
+            int pts = PointsHook.look(p.getUniqueId());
+            s = s.replace("{points}", pts < 0 ? "0" : String.valueOf(pts));
+        }
         s = s.replace("{player}", p.getName())
              .replace("{rank}", rm.display(r))
              .replace("{rank_id}", r == null ? "" : r.id())
